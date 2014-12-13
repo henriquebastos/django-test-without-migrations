@@ -15,7 +15,7 @@ class DisableMigrations(object):
 class Command(TestCommand):
     option_list = TestCommand.option_list + (
         make_option('--nomigrations',
-            action='store_true', dest='interactive', default=False,
+            action='store_true', dest='nomigrations', default=False,
             help='Tells Django to NOT use migrations and create all tables directly.'),
     )
 
