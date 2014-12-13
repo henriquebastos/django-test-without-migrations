@@ -8,3 +8,4 @@
 tmp/
 dist/
 .DS_Store
+build/
