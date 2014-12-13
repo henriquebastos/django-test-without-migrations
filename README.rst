@@ -9,13 +9,21 @@ Django Test Without Migrations: Disable migrations when running your Django test
     :target: https://landscape.io/github/henriquebastos/django-test-without-migrations/master
     :alt: Code Helth
 
-.. image:: https://pypip.in/v/django-test-without-migrations/badge.png
+.. image:: https://pypip.in/v/django-test-without-migrations/badge.svg
     :target: https://crate.io/packages/django-test-without-migrations/
     :alt: Latest PyPI version
 
-.. image:: https://pypip.in/d/django-test-without-migrations/badge.png
+.. image:: https://pypip.in/d/django-test-without-migrations/badge.svg
     :target: https://crate.io/packages/django-aggregate-if/
     :alt: Number of PyPI downloads
+
+.. image:: https://pypip.in/py_versions/django-test-without-migrations/badge.svg
+    :target: https://pypi.python.org/pypi/django-test-without-migrations/
+    :alt: Supported Python versions
+
+.. image:: https://pypip.in/license/django-test-without-migrations/badge.svg
+    :target: https://pypi.python.org/pypi/django-test-without-migrations/
+    :alt: License
 
 *Test Without Migrations* is a `manage.py test` command extension.
 
