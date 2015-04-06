@@ -23,7 +23,7 @@ Django Test Without Migrations: Disable migrations when running your Django test
 
 *Test Without Migrations* is a `manage.py test` command extension.
 
-The new Django 1.7 migration backend demands that you create a migration every time you change a model.
+The new Django 1.7 and 1.8 migration backend demands that you create a migration every time you change a model.
 
 This can be inconvenient when you're just trying to explore your models code.
 
