@@ -14,7 +14,7 @@ Django Test Without Migrations: Disable migrations when running your Django test
     :alt: Latest PyPI version
 
 .. image:: https://pypip.in/d/django-test-without-migrations/badge.svg
-    :target: https://crate.io/packages/django-aggregate-if/
+    :target: https://crate.io/packages/django-test-without-migrations/
     :alt: Number of PyPI downloads
 
 .. image:: https://pypip.in/license/django-test-without-migrations/badge.svg
