@@ -21,14 +21,14 @@ class Command(TestCommand):
         # So we only define option_list for Django 1.7
         if DJANGO_VERSION < (1, 8):
             self.option_list = super(Command, self).option_list + (
-                make_option('--nomigrations', action='store_true', dest='nomigrations', default=False,
+                make_option('-nm', '--nomigrations', action='store_true', dest='nomigrations', default=False,
                     help='Tells Django to NOT use migrations and create all tables directly.'),
             )
 
     def add_arguments(self, parser):  # New API on Django 1.8
         super(Command, self).add_arguments(parser)
 
-        parser.add_argument('--nomigrations',
+        parser.add_argument('-nm', '--nomigrations',
             action='store_true', dest='nomigrations', default=False,
             help='Tells Django to NOT use migrations and create all tables directly.'),
 

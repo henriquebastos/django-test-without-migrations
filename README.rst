@@ -55,11 +55,17 @@ Then add it to your `INSTALLED_APPS` on your `settings.py`:
 Usage
 -----
 
-Inform the flag `--nomigrations` when running your tests:
+Inform the flag ``--nomigrations`` when running your tests:
 
 .. code-block:: bash
 
     $ python manage.py test --nomigrations
+
+Or use the alias ``-nm``:
+
+.. code-block:: bash
+
+    $ python manage.py test -nm
 
 Inspiration
 -----------

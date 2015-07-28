@@ -8,3 +8,4 @@ if __name__ == '__main__':
     os.environ['DJANGO_SETTINGS_MODULE'] = 'tests.settings'
 
     execute_from_command_line(['manage.py', 'test', '--nomigrations'])
+    execute_from_command_line(['manage.py', 'test', '-nm'])
