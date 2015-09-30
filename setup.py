@@ -4,7 +4,7 @@ import os
 
 
 setup(name='django-test-without-migrations',
-      version='0.2',
+      version='0.3',
       description='Disable migrations when running your Django tests.',
       long_description=open(os.path.join(os.path.dirname(__file__), "README.rst")).read(),
       author="Henrique Bastos", author_email="henrique@bastos.net",
