@@ -1,7 +1,7 @@
 Django Test Without Migrations: Disable migrations when running your Django tests
 =================================================================================
 
-.. image:: https://travis-ci.org/henriquebastos/django-test-without-migrations.png?branch=master
+.. image:: https://img.shields.io/travis/henriquebastos/django-test-without-migrations.svg
     :target: https://travis-ci.org/henriquebastos/django-test-without-migrations
     :alt: Test Status
 
@@ -9,15 +9,16 @@ Django Test Without Migrations: Disable migrations when running your Django test
     :target: https://landscape.io/github/henriquebastos/django-test-without-migrations/master
     :alt: Code Helth
 
-.. image:: https://pypip.in/v/django-test-without-migrations/badge.svg
-    :target: https://crate.io/packages/django-test-without-migrations/
+.. image:: https://img.shields.io/pypi/v/django-test-without-migrations.svg
+    :target: https://pypi.python.org/pypi/django-test-without-migrations/
     :alt: Latest PyPI version
 
-.. image:: https://pypip.in/d/django-test-without-migrations/badge.svg
-    :target: https://crate.io/packages/django-test-without-migrations/
+
+.. image:: https://img.shields.io/pypi/dm/django-test-without-migrations.svg
+    :target: https://pypi.python.org/pypi/django-test-without-migrations/
     :alt: Number of PyPI downloads
 
-.. image:: https://pypip.in/license/django-test-without-migrations/badge.svg
+.. image:: https://img.shields.io/github/license/henriquebastos/django-test-without-migrations.svg
     :target: https://pypi.python.org/pypi/django-test-without-migrations/
     :alt: License
 
