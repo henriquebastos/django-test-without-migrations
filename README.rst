@@ -53,6 +53,21 @@ Then add it to your `INSTALLED_APPS` on your `settings.py`:
         'test_without_migrations',
     )
 
+You will want to make sure that `test_without_migrations` appears **before**
+any other apps in ``INSTALLED_APPS`` that provide a custom ``test`` management
+command.
+
+In this case, you will also want to set the ``TEST_WITHOUT_MIGRATIONS_COMMAND``
+setting:
+
+.. code-block:: python
+
+    TEST_WITHOUT_MIGRATIONS_COMMAND = 'django_nose.management.commands.test.Command'
+
+This will ensure that you don't lose any additional functionality provided by
+your custom ``test`` management command.
+
+
 Usage
 -----
 
