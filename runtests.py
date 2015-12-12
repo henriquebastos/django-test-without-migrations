@@ -26,6 +26,6 @@ if __name__ == '__main__':
             print("Testing failed: could not import {0}, try pip installing it".format(module))
             sys.exit(1)
 
-    # Add pdb flag is this is only supported by nose
+    # Add pdb flag as this is only supported by nose
     subprocess.call(['django-admin', 'test', 'tests.myapp.nose_tests', '--nomigrations', '--pdb'])
     subprocess.call(['django-admin', 'test', 'tests.myapp.nose_tests', '-n', '--pdb'])
