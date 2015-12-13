@@ -4,6 +4,6 @@ python:
   - "3.4"
 
 install:
-    - pip install -q -r requirements.txt --use-mirrors
+  - pip install -q -r requirements.txt --use-mirrors
 script:
   - ./runtests.py
