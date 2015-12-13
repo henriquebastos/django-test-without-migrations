@@ -7,6 +7,12 @@ from importlib import import_module
 
 
 if __name__ == '__main__':
+    # We need to set the PYTHONPATH environment variable
+    # because otherwise subprocesses on Travis CI won't
+    # include this directory in the pythonpath
+    root_dir = os.path.dirname(os.path.realpath(__file__))
+    os.environ['PYTHONPATH'] = root_dir + os.pathsep + os.environ.get('PYTHONPATH', '')
+
     # Test using django.test.runner.DiscoverRunner
     os.environ['DJANGO_SETTINGS_MODULE'] = 'tests.settings'
 
