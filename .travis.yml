@@ -4,6 +4,6 @@ python:
   - "3.4"
 
 install:
-  - pip install -q Django --use-mirrors
+  - pip install -q -r requirements.txt --use-mirrors
 script:
   - ./runtests.py
