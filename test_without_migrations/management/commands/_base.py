@@ -9,20 +9,19 @@ from django.utils.module_loading import import_string
 HELP = 'Tells Django to NOT use migrations and create all tables directly.'
 
 
-# testserver command only exists on Django 1.10+
-if DJANGO_VERSION >= (1, 10):
-    TestServerCommand = import_string(getattr(
-        settings,
-        'TEST_WITHOUT_MIGRATIONS_COMMAND',
-        'django.core.management.commands.testserver.Command'))
-else:
-    TestServerCommand = None
-
-
 TestCommand = import_string(getattr(
     settings,
     'TEST_WITHOUT_MIGRATIONS_COMMAND',
     'django.core.management.commands.test.Command'))
+
+
+# testserver command only exists on Django 1.10+
+if DJANGO_VERSION >= (1, 10):
+    TestServerCommand = import_string(
+        'django.core.management.commands.testserver.Command'
+    )
+else:
+    TestServerCommand = TestCommand
 
 
 class DisableMigrations(object):
