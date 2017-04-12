@@ -83,6 +83,12 @@ Or use the alias ``-n``:
 
     $ python manage.py test -n
 
+Version 0.6 also supports `testserver` command:
+
+.. code-block:: bash
+
+    $ python manage.py testserver --nomigrations myfixture.json
+
 Inspiration
 -----------
 

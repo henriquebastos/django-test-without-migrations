@@ -1,5 +1,7 @@
 # coding: utf-8
 
+ALLOWED_HOSTS = ['*']
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',

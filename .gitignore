@@ -4,7 +4,7 @@
 *.kpf
 *.egg-info/
 .idea
-.tox
+.tox/
 tmp/
 dist/
 .DS_Store
