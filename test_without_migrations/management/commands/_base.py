@@ -67,7 +67,7 @@ class CommandMixin(object):
             default=False,
             help=HELP)
 
-    def handle(self, *test_labels, **options):
+    def execute(self, *args, **options):
         for arg in ('-n', '--nomigrations'):
             if arg in sys.argv:
                 sys.argv.remove(arg)
@@ -75,4 +75,4 @@ class CommandMixin(object):
         if options['nomigrations']:
             settings.MIGRATION_MODULES = DisableMigrations()
 
-        super(CommandMixin, self).handle(*test_labels, **options)
+        super(CommandMixin, self).execute(*args, **options)
