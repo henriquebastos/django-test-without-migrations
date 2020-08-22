@@ -89,6 +89,15 @@ Version 0.6 also supports `testserver` command:
 
     $ python manage.py testserver --nomigrations myfixture.json
 
+To avoid needing to set a flag on the command line, there is a Django
+setting to specify the default behavior:
+
+.. code-block:: python
+
+    # settings.py
+
+    TEST_WITHOUT_MIGRATIONS_DEFAULT = True
+
 Inspiration
 -----------
 

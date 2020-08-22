@@ -15,6 +15,13 @@ TestCommand = import_string(getattr(
     'django.core.management.commands.test.Command'))
 
 
+TEST_WITHOUT_MIGRATIONS_DEFAULT = getattr(
+    settings,
+    'TEST_WITHOUT_MIGRATIONS_DEFAULT',
+    False
+)
+
+
 # testserver command only exists on Django 1.10+
 if DJANGO_VERSION >= (1, 10):
     TestServerCommand = import_string(
@@ -52,7 +59,7 @@ class CommandMixin(object):
                     '--nomigrations',
                     action='store_true',
                     dest='nomigrations',
-                    default=False,
+                    default=TEST_WITHOUT_MIGRATIONS_DEFAULT,
                     help=HELP),
             )
 
@@ -64,7 +71,7 @@ class CommandMixin(object):
             '--nomigrations',
             action='store_true',
             dest='nomigrations',
-            default=False,
+            default=TEST_WITHOUT_MIGRATIONS_DEFAULT,
             help=HELP)
 
     def handle(self, *test_labels, **options):
