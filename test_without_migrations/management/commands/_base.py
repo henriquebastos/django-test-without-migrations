@@ -32,10 +32,7 @@ class DisableMigrations(object):
     def __getitem__(self, item):
         # django 1.9 takes None, 1.7/8 has an error here, so use a dummy value
         # 1.11+ always actually imports the module, so we can't use the dummy there
-        if DJANGO_VERSION < (1, 9):
-            return 'notmigrations'
-        else:
-            return None
+        return 'notmigrations' if DJANGO_VERSION < (1, 9) else None
 
 
 class CommandMixin(object):
